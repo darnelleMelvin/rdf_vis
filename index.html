@@ -3,21 +3,74 @@
 <head>
   <meta charset="UTF-8">
   <title>RDF Graph Viewer</title>
+
+  <!-- N3.js for parsing TTL, N-Triples, TriG -->
   <script src="https://unpkg.com/n3@1.17.0/browser/n3.min.js"></script>
+
+  <!-- vis-network for graph visualization -->
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+
   <style>
-    #network { width: 100%; height: 90vh; border: 1px solid #ddd; }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    #network {
+      width: 100%;
+      height: 80vh;
+      border: 1px solid #ccc;
+      margin-top: 10px;
+    }
+    select {
+      padding: 8px;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
   </style>
 </head>
+
 <body>
+
   <h2>RDF Graph Visualization</h2>
+  <p>Select an RDF file to visualize:</p>
+
+  <!-- Dropdown that will be populated with RDF files -->
+  <select id="fileSelect"></select>
+
   <div id="network"></div>
 
   <script>
-    async function loadRDF(url) {
-      const text = await fetch(url).then(r => r.text());
-      const parser = new N3.Parser();
-      const triples = parser.parse(text);
+    // 1. List your RDF directory files manually here
+    // (GitHub Pages cannot dynamically list folders)
+    const rdfFiles = [
+      "file1.ttl",
+      "file2.ttl",
+      "file3.nt",
+      "file4.rdf"
+    ];
+
+    // Populate dropdown
+    const select = document.getElementById("fileSelect");
+    rdfFiles.forEach(f => {
+      const option = document.createElement("option");
+      option.value = f;
+      option.textContent = f;
+      select.appendChild(option);
+    });
+
+    select.addEventListener("change", () => loadRDF(select.value));
+
+    async function loadRDF(filename) {
+      const url = `rdf/${filename}`;
+      const raw = await fetch(url).then(r => r.text());
+
+      let triples = [];
+      try {
+        triples = new N3.Parser().parse(raw);
+      } catch (e) {
+        alert("Error parsing RDF: " + e);
+        return;
+      }
 
       const nodes = {};
       const edges = [];
@@ -38,12 +91,15 @@
           nodes: new vis.DataSet(Object.values(nodes)),
           edges: new vis.DataSet(edges)
         },
-        {}
+        {
+          edges: { arrows: "to" }
+        }
       );
     }
 
-    // Replace with the raw GitHub URL or local file
-    loadRDF("yourfile.ttl");
+    // Load the first file by default
+    loadRDF(rdfFiles[0]);
   </script>
+
 </body>
 </html>
