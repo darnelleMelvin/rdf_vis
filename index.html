@@ -1,109 +1,89 @@
-<!DOCTYPE html>
-<html>
-<head>
-  <meta charset="UTF-8">
-  <title>RDF Graph Viewer</title>
+<script>
+  const rdfFiles = [
+    "5687418.bfWork.nt",
+    "5687418.bfInstant.nt",
+    "n91107599.skos.nt",
+    "n91112667.skos.nt",
+    "nr99009111.skos.nt",
+    "sh85111437.skos.nt",
+    "sh87003329.skos.nt"
+  ];
 
-  <!-- N3.js parser -->
-  <script src="https://unpkg.com/n3@1.17.0/browser/n3.min.js"></script>
+  const select = document.getElementById("fileSelect");
+  rdfFiles.forEach(f => {
+    const option = document.createElement("option");
+    option.value = f;
+    option.textContent = f;
+    select.appendChild(option);
+  });
 
-  <!-- vis-network for visualization -->
-  <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
+  select.addEventListener("change", () => loadRDF(select.value));
 
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 20px;
+  function shorten(text) {
+    if (text.length > 50) {
+      return text.substring(0, 47) + "...";
     }
-    #network {
-      width: 100%;
-      height: 80vh;
-      border: 1px solid #ccc;
-      margin-top: 10px;
+    return text;
+  }
+
+  async function loadRDF(filename) {
+    const url = `rdf/${filename}`;
+    const raw = await fetch(url).then(res => res.text());
+
+    let triples = [];
+    try {
+      triples = new N3.Parser().parse(raw);
+    } catch (e) {
+      console.error("Parser error:", e);
+      alert("RDF parse error — see console");
+      return;
     }
-    select {
-      padding: 8px;
-      font-size: 16px;
-      margin-bottom: 10px;
-    }
-  </style>
-</head>
 
-<body>
+    const nodes = {};
+    const edges = [];
 
-  <h2>RDF Graph Visualization</h2>
-  <p>Select an RDF file to visualize:</p>
+    triples.forEach(t => {
+      const subj = t.subject;
+      const obj = t.object;
+      const pred = t.predicate;
 
-  <!-- Dropdown populated by JS -->
-  <select id="fileSelect"></select>
-
-  <div id="network"></div>
-
-  <script>
-    // RDF files from your folder
-    const rdfFiles = [
-      "5687418.bfWork.nt",
-      "5687418.bfInstant.nt",
-      "n91107599.skos.nt",
-      "n91112667.skos.nt",
-      "nr99009111.skos.nt",
-      "sh85111437.skos.nt",
-      "sh87003329.skos.nt"
-    ];
-
-    // Populate dropdown
-    const select = document.getElementById("fileSelect");
-    rdfFiles.forEach(f => {
-      const option = document.createElement("option");
-      option.value = f;
-      option.textContent = f;
-      select.appendChild(option);
-    });
-
-    select.addEventListener("change", () => loadRDF(select.value));
-
-    async function loadRDF(filename) {
-      const url = `rdf/${filename}`;
-      const raw = await fetch(url).then(res => res.text());
-
-      let triples = [];
-      try {
-        triples = new N3.Parser().parse(raw);
-      } catch (e) {
-        alert("Error parsing RDF: " + e);
-        return;
+      // Create unique node IDs
+      if (!nodes[subj]) {
+        nodes[subj] = { id: subj, label: shorten(subj) };
       }
 
-      const nodes = {};
-      const edges = [];
+      if (!nodes[obj]) {
+        nodes[obj] = {
+          id: obj,
+          label: shorten(obj),
+          shape: obj.startsWith('"') ? "box" : "ellipse",
+          color: obj.startsWith('"') ? "#eef" : undefined
+        };
+      }
 
-      triples.forEach(t => {
-        nodes[t.subject] = { id: t.subject, label: t.subject };
-        nodes[t.object] = { id: t.object, label: t.object };
-        edges.push({
-          from: t.subject,
-          to: t.object,
-          label: t.predicate
-        });
+      edges.push({
+        from: subj,
+        to: obj,
+        label: shorten(pred)
       });
+    });
 
-      const container = document.getElementById("network");
-      const network = new vis.Network(
-        container,
-        {
-          nodes: new vis.DataSet(Object.values(nodes)),
-          edges: new vis.DataSet(edges)
+    const container = document.getElementById("network");
+    const network = new vis.Network(
+      container,
+      {
+        nodes: new vis.DataSet(Object.values(nodes)),
+        edges: new vis.DataSet(edges)
+      },
+      {
+        edges: {
+          arrows: "to",
+          font: { align: "top" }
         },
-        {
-          edges: { arrows: "to", font: { align: "hcenter" } },
-          physics: { enabled: true }
-        }
-      );
-    }
+        physics: { stabilization: true }
+      }
+    );
+  }
 
-    // Load first file by default
-    loadRDF(rdfFiles[0]);
-  </script>
-
-</body>
-</html>
+  loadRDF(rdfFiles[0]);
+</script>
