@@ -1,0 +1,35 @@
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#RWO> .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.w3.org/2000/01/rdf-schema#label> "Slick Rick" .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.loc.gov/mads/rdf/v1#birthDate> "1965-01-14"^^<http://id.loc.gov/datatypes/edtf> .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.loc.gov/mads/rdf/v1#birthPlace> <http://id.loc.gov/rwo/agents/n85377533> .
+<http://id.loc.gov/rwo/agents/n85377533> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Geographic> .
+<http://id.loc.gov/rwo/agents/n85377533> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/rwo/agents/n85377533> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Mitcham (London, England)" .
+<http://id.loc.gov/rwo/agents/n85377533> <http://www.loc.gov/mads/rdf/v1#code> "e-uk-en"^^<http://id.loc.gov/datatypes/codes/gac> .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> _:b17iddOtlocdOtgovrwoagentsn91107599 .
+_:b17iddOtlocdOtgovrwoagentsn91107599 <http://www.loc.gov/mads/rdf/v1#fieldOfActivity> <http://id.loc.gov/authorities/subjects/sh85111437> .
+<http://id.loc.gov/authorities/subjects/sh85111437> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh85111437> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh85111437> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Rap (Music)"@en .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.loc.gov/mads/rdf/v1#occupation> _:b24iddOtlocdOtgovrwoagentsn91107599 .
+_:b24iddOtlocdOtgovrwoagentsn91107599 <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh90004826> .
+<http://id.loc.gov/authorities/subjects/sh90004826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh90004826> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh90004826> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Rap musicians"@en .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.loc.gov/mads/rdf/v1#occupation> _:b31iddOtlocdOtgovrwoagentsn91107599 .
+_:b31iddOtlocdOtgovrwoagentsn91107599 <http://www.loc.gov/mads/rdf/v1#occupation> <http://id.loc.gov/authorities/subjects/sh85125387> .
+<http://id.loc.gov/authorities/subjects/sh85125387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Topic> .
+<http://id.loc.gov/authorities/subjects/sh85125387> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/subjects/sh85125387> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Sound recording executives and producers"@en .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.loc.gov/mads/rdf/v1#associatedLanguage> <http://id.loc.gov/vocabulary/languages/eng> .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Language> .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "English"@en .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Englisch"@de .
+<http://id.loc.gov/vocabulary/languages/eng> <http://www.loc.gov/mads/rdf/v1#code> "eng"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://id.loc.gov/rwo/agents/n91107599> <http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority> <http://id.loc.gov/authorities/names/n91107599> .
+<http://id.loc.gov/authorities/names/n91107599> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+<http://id.loc.gov/authorities/names/n91107599> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/names/n91107599> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Slick Rick" .

@@ -1,0 +1,8 @@
+<http://id.loc.gov/rwo/agents/n91112667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#RWO> .
+<http://id.loc.gov/rwo/agents/n91112667> <http://www.w3.org/2000/01/rdf-schema#label> "Wright, Vance" .
+<http://id.loc.gov/rwo/agents/n91112667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Person> .
+<http://id.loc.gov/rwo/agents/n91112667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://xmlns.com/foaf/0.1/Person> .
+<http://id.loc.gov/rwo/agents/n91112667> <http://www.loc.gov/mads/rdf/v1#isIdentifiedByAuthority> <http://id.loc.gov/authorities/names/n91112667> .
+<http://id.loc.gov/authorities/names/n91112667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#PersonalName> .
+<http://id.loc.gov/authorities/names/n91112667> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.loc.gov/mads/rdf/v1#Authority> .
+<http://id.loc.gov/authorities/names/n91112667> <http://www.loc.gov/mads/rdf/v1#authoritativeLabel> "Wright, Vance" .

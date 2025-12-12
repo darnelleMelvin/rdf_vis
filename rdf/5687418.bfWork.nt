@@ -1,0 +1,66 @@
+<http://id.loc.gov/resources/works/5687418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Work> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bflc/aap> "Slick Rick. The great adventures of Slick Rick" .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bflc/aap-normalized> "slickrickthegreatadventuresofslickrick" .
+<http://id.loc.gov/resources/works/5687418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/MusicAudio> .
+<http://id.loc.gov/resources/works/5687418> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Monograph> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/language> <http://id.loc.gov/vocabulary/languages/eng> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/genreForm> <http://id.loc.gov/authorities/genreForms/gf2014027054> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/classification> _:b12iddOtlocdOtgovresourcesworks5687418 .
+_:b12iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/ClassificationLcc> .
+_:b12iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/classificationPortion> "Def Jam/Columbia FC 40513" .
+_:b12iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/assigner> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b12iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/status> <http://id.loc.gov/vocabulary/mstatus/uba> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/contribution> _:b18iddOtlocdOtgovresourcesworks5687418 .
+_:b18iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution> .
+_:b18iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/PrimaryContribution> .
+_:b18iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/rwo/agents/n91107599> .
+_:b18iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/ctb> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/title> _:b23iddOtlocdOtgovresourcesworks5687418 .
+_:b23iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Title> .
+_:b23iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/mainTitle> "The great adventures of Slick Rick" .
+_:b23iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bflc/nonSortNum> "4" .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/content> <http://id.loc.gov/vocabulary/contentTypes/prm> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/tableOfContents> _:b30iddOtlocdOtgovresourcesworks5687418 .
+_:b30iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/TableOfContents> .
+_:b30iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/2000/01/rdf-schema#label> "Treat her like a prostitute -- The ruler's back -- Children's story -- The moment I feared -- Let's get crazy -- Indian girl (an adult story) -- Teenage love -- Mona Lisa -- Kit (what's the scoop) -- Hey young world -- Teacher, teacher -- Lick the balls." .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/note> _:b34iddOtlocdOtgovresourcesworks5687418 .
+_:b34iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
+_:b34iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/mnotetype/participants> .
+_:b34iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/2000/01/rdf-schema#label> "Performed by Slick Rick ; with DJ Vance Wright." .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/subject> <http://id.loc.gov/authorities/subjects/sh87003329> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/subject> <http://id.loc.gov/authorities/subjects/sh85111437> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/contribution> _:b41iddOtlocdOtgovresourcesworks5687418 .
+_:b41iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Contribution> .
+_:b41iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/rwo/agents/n91112667> .
+_:b41iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/role> <http://id.loc.gov/vocabulary/relators/prf> .
+<http://id.loc.gov/resources/works/5687418> <http://purl.org/dc/terms/isPartOf> <http://id.loc.gov/resources/works> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/hasInstance> <http://id.loc.gov/resources/instances/5687418> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/adminMetadata> _:b47iddOtlocdOtgovresourcesworks5687418 .
+_:b47iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/AdminMetadata> .
+_:b47iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/status> <http://id.loc.gov/vocabulary/mstatus/n> .
+_:b47iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/date> "1993-08-16"^^<http://www.w3.org/2001/XMLSchema#date> .
+_:b47iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/vocabulary/organizations/icvr> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/adminMetadata> _:b53iddOtlocdOtgovresourcesworks5687418 .
+_:b53iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/AdminMetadata> .
+_:b53iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/status> <http://id.loc.gov/vocabulary/mstatus/c> .
+_:b53iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/agent> <http://id.loc.gov/vocabulary/organizations/dlcmrc> .
+_:b53iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/generationProcess> <https://github.com/lcnetdev/marc2bibframe2/releases/tag/v2.10.0> .
+_:b53iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/date> "2025-08-16T19:33:47.492236-04:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+<http://id.loc.gov/resources/works/5687418> <http://id.loc.gov/ontologies/bibframe/adminMetadata> _:b60iddOtlocdOtgovresourcesworks5687418 .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/AdminMetadata> .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/descriptionLevel> <http://id.loc.gov/ontologies/bibframe-2-6-0/> .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bflc/encodingLevel> <http://id.loc.gov/vocabulary/menclvl/f> .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/descriptionConventions> <http://id.loc.gov/vocabulary/descriptionConventions/aacr> .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/identifiedBy> _:b65iddOtlocdOtgovresourcesworks5687418 .
+_:b65iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Local> .
+_:b65iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#value> "5687418" .
+_:b65iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/assigner> <http://id.loc.gov/vocabulary/organizations/dlc> .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bflc/marcKey> "906 $a7$bcbc$ccopycat$d4$encip$f19$gy-genmusic" .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/lclocal/d906> "=906 $a 7 $b cbc $c copycat $d 4 $e ncip $f 19 $g y-genmusic" .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bflc/marcKey> "955 $aLCAP batch update 2025-06-02-04:00: LCAPM-990" .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/lclocal/d955> "=955 $a LCAP batch update 2025-06-02-04:00: LCAPM-990" .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/note> _:b78iddOtlocdOtgovresourcesworks5687418 .
+_:b78iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/ontologies/bibframe/Note> .
+_:b78iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://id.loc.gov/vocabulary/mnotetype/internal> .
+_:b78iddOtlocdOtgovresourcesworks5687418 <http://www.w3.org/2000/01/rdf-schema#label> "040 $aICvR$cDLC$dDLC" .
+_:b60iddOtlocdOtgovresourcesworks5687418 <http://id.loc.gov/ontologies/bibframe/descriptionAuthentication> <http://id.loc.gov/vocabulary/marcauthen/lccopycat> .

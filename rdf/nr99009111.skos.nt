@@ -1,0 +1,23 @@
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#Concept> .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#prefLabel> "Def Jam Recordings" .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2008/05/skos-xl#altLabel> _:b7iddOtlocdOtgovauthoritiesnamesnr99009111 .
+_:b7iddOtlocdOtgovauthoritiesnamesnr99009111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2008/05/skos-xl#Label> .
+_:b7iddOtlocdOtgovauthoritiesnamesnr99009111 <http://www.w3.org/2008/05/skos-xl#literalForm> "Def Jam Records"@zxx-Latn .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#semanticRelation> <http://id.loc.gov/authorities/names/no98106040> .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#exactMatch> <http://viaf.org/en/viaf/LC%7Cnr%2099009111> .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://id.worldcat.org/fast/747801> .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#closeMatch> <http://www.wikidata.org/entity/Q654283> .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#inScheme> <http://id.loc.gov/authorities/names> .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#altLabel> "Def Jam Records"@zxx-Latn .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#changeNote> _:b19iddOtlocdOtgovauthoritiesnamesnr99009111 .
+_:b19iddOtlocdOtgovauthoritiesnamesnr99009111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b19iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/nr99009111> .
+_:b19iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/nn> .
+_:b19iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#createdDate> "1999-03-18T00:00:00"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b19iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#changeReason> "new"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://id.loc.gov/authorities/names/nr99009111> <http://www.w3.org/2004/02/skos/core#changeNote> _:b27iddOtlocdOtgovauthoritiesnamesnr99009111 .
+_:b27iddOtlocdOtgovauthoritiesnamesnr99009111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/vocab/changeset/schema#ChangeSet> .
+_:b27iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#subjectOfChange> <http://id.loc.gov/authorities/names/nr99009111> .
+_:b27iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#creatorName> <http://id.loc.gov/vocabulary/organizations/upb> .
+_:b27iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#createdDate> "2025-08-04T23:11:45"^^<http://www.w3.org/2001/XMLSchema#dateTime> .
+_:b27iddOtlocdOtgovauthoritiesnamesnr99009111 <http://purl.org/vocab/changeset/schema#changeReason> "revised"^^<http://www.w3.org/2001/XMLSchema#string> .
