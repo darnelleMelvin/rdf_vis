@@ -4,10 +4,10 @@
   <meta charset="UTF-8">
   <title>RDF Graph Viewer</title>
 
-  <!-- N3.js for parsing TTL, N-Triples, TriG -->
+  <!-- N3.js parser -->
   <script src="https://unpkg.com/n3@1.17.0/browser/n3.min.js"></script>
 
-  <!-- vis-network for graph visualization -->
+  <!-- vis-network for visualization -->
   <script src="https://unpkg.com/vis-network/standalone/umd/vis-network.min.js"></script>
 
   <style>
@@ -34,14 +34,13 @@
   <h2>RDF Graph Visualization</h2>
   <p>Select an RDF file to visualize:</p>
 
-  <!-- Dropdown that will be populated with RDF files -->
+  <!-- Dropdown populated by JS -->
   <select id="fileSelect"></select>
 
   <div id="network"></div>
 
   <script>
-    // 1. List your RDF directory files manually here
-    // (GitHub Pages cannot dynamically list folders)
+    // RDF files from your folder
     const rdfFiles = [
       "5687418.bfWork.nt",
       "5687418.bfInstant.nt",
@@ -49,7 +48,7 @@
       "n91112667.skos.nt",
       "nr99009111.skos.nt",
       "sh85111437.skos.nt",
-      "sh87003329.skos.nt"     
+      "sh87003329.skos.nt"
     ];
 
     // Populate dropdown
@@ -65,7 +64,7 @@
 
     async function loadRDF(filename) {
       const url = `rdf/${filename}`;
-      const raw = await fetch(url).then(r => r.text());
+      const raw = await fetch(url).then(res => res.text());
 
       let triples = [];
       try {
@@ -88,19 +87,21 @@
         });
       });
 
+      const container = document.getElementById("network");
       const network = new vis.Network(
-        document.getElementById("network"),
+        container,
         {
           nodes: new vis.DataSet(Object.values(nodes)),
           edges: new vis.DataSet(edges)
         },
         {
-          edges: { arrows: "to" }
+          edges: { arrows: "to", font: { align: "hcenter" } },
+          physics: { enabled: true }
         }
       );
     }
 
-    // Load the first file by default
+    // Load first file by default
     loadRDF(rdfFiles[0]);
   </script>
 
